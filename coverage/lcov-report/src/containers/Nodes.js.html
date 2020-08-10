@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/containers/Nodes.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">src/containers</a> Nodes.js
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import * as nodeActions from "../state/modules/nodes/actions/nodes";
+import * as blocksActions from "../state/modules/blocks/actions/blocks.creators";
+import Node from "../components/Node";
+import { Typography, Box } from "@material-ui/core";
+&nbsp;
+export class Nodes extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      expandedNodeURL: null,
+    };
+    this.toggleNodeExpanded = this.toggleNodeExpanded.bind(this);
+  }
+&nbsp;
+  componentDidMount() {
+    const { nodeActions } = this.props;
+    if (nodeActions) nodeActions.checkNodeStatuses(this.props.nodes.list);
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  to</span>ggleNodeExpanded(node) {
+    const { blocksActions } = <span class="cstat-no" title="statement not covered" >this.props;</span>
+    const isEqual = <span class="cstat-no" title="statement not covered" >node.url === this.state.expandedNodeURL;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    this.setState(</span>
+      {
+        expandedNodeURL: isEqual ? null : node.url,
+      },
+<span class="fstat-no" title="function not covered" >      ()</span> =&gt; {
+        const active = <span class="cstat-no" title="statement not covered" >node.url === this.state.expandedNodeURL;</span>
+        const { blocks } = <span class="cstat-no" title="statement not covered" >node;</span>
+<span class="cstat-no" title="statement not covered" >        if (active &amp;&amp; (!blocks || blocks.length &lt;= 0))</span>
+<span class="cstat-no" title="statement not covered" >          blocksActions.getBlockStart(node);</span>
+      }
+    );
+  }
+&nbsp;
+  render() {
+    const { nodes } = this.props;
+    return (
+      &lt;Box paddingTop={7}&gt;
+        &lt;Typography variant="h4" component="h1"&gt;
+          &lt;strong style={{ color: "#000" }}&gt;Nodes&lt;/strong&gt;
+        &lt;/Typography&gt;
+        {nodes.list.map((node) =&gt; (
+          &lt;Node
+            node={node}
+            key={node.url}
+            expanded={node.url === this.state.expandedNodeURL &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >!node.loading}</span>
+            toggleNodeExpanded={this.toggleNodeExpanded}
+          /&gt;
+        ))}
+      &lt;/Box&gt;
+    );
+  }
+}
+&nbsp;
+Nodes.propTypes = {
+  nodeActions: PropTypes.object.isRequired,
+  blocksActions: PropTypes.object.isRequired,
+  nodes: PropTypes.object.isRequired,
+};
+&nbsp;
+function mapStateToProps(state) {
+  return {
+    nodes: state.nodes,
+  };
+}
+&nbsp;
+function mapDispatchToProps(dispatch) {
+  return {
+    nodeActions: bindActionCreators(nodeActions, dispatch),
+    blocksActions: bindActionCreators(blocksActions, dispatch),
+  };
+}
+&nbsp;
+export default connect(mapStateToProps, mapDispatchToProps)(Nodes);
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Aug 09 2020 20:15:20 GMT-0500 (-05)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
